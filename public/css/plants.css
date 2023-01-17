@@ -1,0 +1,100 @@
+﻿html{
+	background:#deb887;
+}
+body{
+	margin: 0 ;
+	padding: 0 ;
+	font-size: 15px ;
+	line-height: 1.618 ;
+	background: url(../img/bg.jpg) no-repeat center center / cover;
+	height: 100vh;
+}
+.header{
+	border-bottom: 3px solid #888 ;
+	text-align: center ;
+	margin-bottom: 2em ;
+	padding: 1em 0 ;
+	background: #e8e8e8 ;
+}
+.footer{
+	border-top: 3px solid #888 ;
+	text-align: center ;
+	margin-top: 2em ;
+	padding: 1em 0 ;
+	background: #e8e8e8 ;
+}
+.wrapper{/* 全体*/
+	width: auto ;
+	margin: 0 auto ;
+	padding: 0 ;
+	overflow: hidden ;/*float解除*/
+}
+.divL{
+	float: left ;
+	width: 50% ;
+	margin: 0  ;
+	padding:5px ;
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid rgba(0,0,0,.1) ;
+}
+.divR{
+	float: right ;
+	width: 45% ;
+	margin: 0  ;
+	padding:5px ;
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid rgba(0,0,0,.1) ;
+}
+
+/*@media screen and ( max-width:700px ){*/
+@media screen and ( max-width:479px ){
+	body{
+		background: url(bg.jpg) no-repeat center center / cover;
+		height: 100vh;
+		font-size: 13px ;
+	}
+	.wrapper{
+		width: auto ;
+		padding: 0 10px ;
+	}
+	.divL{
+		float: none ;
+		width: auto ;
+		padding: 0 ;
+		border: none ;
+	}
+	.divR{
+		float: none ;
+		width: auto ;
+		padding: 0 ;
+		border: none ;
+	}
+}
+.h1{
+	font-weight : normal;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:35px;
+	text-align:center;
+	color: #D2691F;
+	text-shadow:
+	   1px  1px 0px #fff,
+	  -1px -1px 1px #666;
+}
+.h3{
+	font-weight : normal;
+	background-color:#FFDEAD;
+	font-size:14px;
+	margin:10px 0px 10px 0px;/*上右下左*/
+	padding:5px;/*上右下左*/
+	border: 1px solid #DDD;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;	/*順番注意。これが最後でないとsafariとclomeが丸くならない*/
+}
+.right{
+	text-align:right;
+}
+/*
+https://syncer.jp/how-to-create-responsive-web-design
+*/
